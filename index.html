@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+</head>
+<body>
+    <div class="conta"></div>
+    <div class="container">
+        <form action="https://sridhar22.neocities.org/BAD/" id="formtwo">
+            <h2>sign In</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="usernametwo" name="username" placeholder="Enter your username...">
+                <div class="errortwo"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="passwordtwo" name="password" placeholder="Enter your password...">
+                <i class="ri-eye-off-line" id="eyeicontwo" onclick="show()"></i>
+                <div class="errortwo"></div>
+            </div>
+              <p>Forgot password ? :<a href="#"> Reset password</a></p>
+            <p>Don't have an account :<a href="#" onclick="signupform()"> Sign up</a></p>
+
+         
+            <button type="submit" id="sign-uptwo">Sign in</button>
+        </form>
+        <form action="#form2" id="form">
+            <h2>sign up</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username"  placeholder="Create your username...">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder=" Enter your email...">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create your password..."><i class="ri-eye-off-line" onclick="show()" id="eyeicon"></i>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="cpassword">Confirm Password</label>
+                <input type="text" id="cpassword" name="cpassword" placeholder="Re-enter your password...">
+                <div class="error"></div>
+            </div>
+            <button type="submit" id="sign-up">Sign up</button>
+           <a href="#"> <i class='bx bx-left-arrow-alt' id="arrow-btn" onclick="backToSignin()"></i></a>
+        </form>
+     
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

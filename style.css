@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: "poppins", sans-serif;
+
+}
+.conta{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(pexels-margerretta-548084.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+.container{
+    position: relative;
+}
+#form{
+    width: 300px;
+    height: 480px;
+    margin: 10vh auto 0 auto;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    padding: 30px;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 45%;
+    transform: translateX(-50%);
+    opacity: 0;
+    scale: 0;
+    filter: blur(5px);
+    transition:all 0.25s ease;
+    box-shadow: 0px 5px 10px 1px #47584588,
+    0px 5px 10px 1px #47584588, 
+    0px 5px 10px 1px #47584588;
+
+
+}
+#form.open{
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center;
+    z-index: 1;
+opacity: 1;
+scale: 1;
+filter: none;
+    
+}
+#formtwo{
+    width: 300px;
+    height: 370px;
+    margin: 10vh auto 0 auto;
+    background-color:transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 5px 10px 1px #47584588,
+    0px 5px 10px 1px #47584588, 
+    0px 5px 10px 1px #47584588;
+
+    
+
+}
+h2{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color:hsl(34, 33%, 22%) ;
+    border-bottom: 3px solid hsl(34, 33%, 22%);
+    line-height: 50px;
+    
+}
+#form button{
+    background-color: #f2f2f2;
+    color: hsl(34, 33%, 22%);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s;
+}
+#form button:hover{
+    background-color: hsl(34, 33%, 22%);
+    color: #f2f2f2;
+
+}
+#form button:active{
+
+    scale: 0.9;
+}
+
+#formtwo button{
+    background-color: #f2f2f2;
+    color: hsl(34, 33%, 22%);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px 0 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s;
+    /* box-shadow: 0px 5px 10px 1px #47584588; */
+}
+
+#formtwo button:active{
+  
+    scale: 0.9;
+}
+#formtwo button:hover{
+    background-color: hsl(34, 33%, 22%);
+    color: #f2f2f2;
+
+}
+.input-group{
+display: flex;
+flex-direction: column;
+margin:10px 0;
+}
+
+.input-group label{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'poppins',sans-serif;
+}
+.input-group input{
+    border-radius: 8px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: #020202;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+.input-group input::placeholder{
+    font-size: 12px;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 0.5px;
+}
+.error{
+    color: rgb(173, 20, 20);
+    font-size: 12px;
+    margin-top: 5px;
+}
+#formtwo p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #020202;
+    font-family: "poppins", sans-serif;
+    margin: 5px 0;
+
+}
+#formtwo p a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+#formtwo p a:hover{
+color: #653274;
+}
+.errortwo{
+    color: rgb(173, 20, 20);
+    font-size: 12px;
+    margin-top: 5px;
+}
+#arrow-btn{
+    position: absolute;
+    top:2%;
+    left: 2%;
+    font-size: 25px;
+    color: hsl(34, 33%, 22%);
+}
+.input-group i{
+    position: absolute;
+    font-size: 15px;
+    color: hsl(34, 33%, 22%);
+    left: 83%;
+    top: 51.5%;
+    transform: translateX(-50%, -50%);
+    cursor: pointer;
+
+
+}
+#eyeicon{
+    position: absolute;
+    left: 83%;
+    top: 53.5%;
+    transform: translateX(-50%, -50%);
+}
+
+@media (max-width:420px){
+    body{
+        width: 100%;
+        min-height: 100vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: hidden;
+    }
+} 
